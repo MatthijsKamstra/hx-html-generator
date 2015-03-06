@@ -1,7 +1,7 @@
 
 package html.tag;
 
-class Comment 
+class Comment extends TagBase
 {
 	private var _content:String;
 
@@ -10,7 +10,7 @@ class Comment
 	    _content = "<!-- " + value + " -->" ;
 	}
 
-	public function toString():String
+	override public function toString():String
 	{
 	    return _content;
 	}

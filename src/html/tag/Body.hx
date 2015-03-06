@@ -1,7 +1,7 @@
 
 package html.tag;
 
-class Body extends BaseTag
+class Body extends Tag
 {
 
 	public var content(get_content, set_content):String;

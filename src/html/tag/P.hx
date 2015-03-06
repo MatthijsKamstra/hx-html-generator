@@ -1,7 +1,7 @@
 
 package html.tag;
 
-class P 
+class P extends Tag
 {
 
 	/*

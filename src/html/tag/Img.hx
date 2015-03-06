@@ -1,7 +1,7 @@
 
 package html.tag;
 
-class Img extends BaseTag
+class Img extends Tag
 {
 
 	/** 

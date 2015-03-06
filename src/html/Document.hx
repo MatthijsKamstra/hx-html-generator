@@ -48,8 +48,8 @@ class Document
 
 	public function addHeader(value:Dynamic):Void
 	{
-		if( Std.is (value, html.tag.BaseTag) ) {
-			_headerArray.push (cast (value,html.tag.BaseTag).toString());
+		if( Std.is (value, html.tag.Tag) ) {
+			_headerArray.push (cast (value,html.tag.Tag).toString());
 		} else {
 			_headerArray.push ( value );
 		}
@@ -58,12 +58,12 @@ class Document
 	/**
 	 * add something to the body tag
 	 * 
-	 * @param 	value 	String or classes extending BaseTag
+	 * @param 	value 	String or classes extending Tag
 	 */
 	public function addBody(value:Dynamic):Void
 	{
-		if( Std.is (value, html.tag.BaseTag) ) {
-			_bodyArray.push (cast (value,html.tag.BaseTag).toString());
+		if( Std.is (value, html.tag.Tag) ) {
+			_bodyArray.push (cast (value,html.tag.Tag).toString());
 		} else {
 			_bodyArray.push ( value );
 		}
@@ -98,7 +98,6 @@ class Document
 		_html += '<!DOCTYPE '+_doctype+'>\n';
 		_html += '<html>\n';
 		_html += '<head>\n';
-		_html += '<meta charset="'+_meta+'">\n';
 		_html += '<title>'+_title+'</title>\n';
 		_html += _headerString;
 		_html += '</head>\n';

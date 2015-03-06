@@ -1,6 +1,6 @@
 package html.tag;
 
-class A extends BaseTag
+class A extends Tag
 {
 
 	/**

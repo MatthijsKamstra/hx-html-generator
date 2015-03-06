@@ -1,7 +1,7 @@
 
 package html.tag;
 
-class Div extends BaseTag
+class Div extends Tag
 {
 
 	// role? :: <div class="navbar" role="navigation">

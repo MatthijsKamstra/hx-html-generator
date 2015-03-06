@@ -1,7 +1,9 @@
 
 package html.tag;
 
-class BaseTag 
+import html.tag.TagBase;
+
+class Tag extends TagBase
 {
 
 	public var id(get_id, set_id):String;
@@ -32,18 +34,18 @@ class BaseTag
 
 	public function createContent(value:Dynamic):Void
 	{
-		if( Std.is (value, html.tag.BaseTag) ) {
-			_content = (cast (value,html.tag.BaseTag).toString());
+		if( Std.is (value, html.tag.TagBase) ) {
+			_content = (cast (value,html.tag.TagBase).toString());
 		} else {
 			_content = value;
 		}
 	}
 
-	public function toString():String
-	{
-		throw "boooja";
-		return '';
-	}
+	// override public function toString():String
+	// {
+	// 	throw "boooja";
+	// 	return '';
+	// }
 
 	// ____________________________________ getter/setter ____________________________________
 

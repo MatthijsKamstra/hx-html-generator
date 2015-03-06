@@ -1,7 +1,7 @@
 
 package html.tag;
 
-class Link extends BaseTag
+class Link extends Tag
 {
 
 
