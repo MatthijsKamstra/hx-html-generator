@@ -1,0 +1,11 @@
+<!DOCTYPE ::doctype::>
+<html>
+<head>
+	<meta charset="::meta::">
+	<title>::title::</title>
+</head>
+<body>
+::body::
+::comment::
+</body>
+</html>
